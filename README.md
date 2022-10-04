@@ -1,4 +1,4 @@
-# to do list project
+# to do list project review exercise
 
 > This project is a simple HTML list of To Do tasks. Built using webpack and served by a webpack server.
 > For this part of this project we add this functionalities to the list:
