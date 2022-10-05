@@ -39,7 +39,7 @@ export class TaskList {
         taskText.classList.add('strike');
       }
       const textArea = document.createElement('textArea');
-      textArea.classList.add('littlePadLeft', 'fGrow', 'dNone', 'mr10p');
+      textArea.classList.add('littlePadLeft', 'fGrow', 'dNone', 'mr10p', 'w100');
       const editButton = document.createElement('button');
       const threeDots = document.createElement('i');
       threeDots.classList.add('fa-solid', 'fa-ellipsis-vertical', 'pad10_5');

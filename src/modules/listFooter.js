@@ -3,7 +3,7 @@ export const listFooter = () => {
   const clearComplete = document.createElement('li');
   const buttonClear = document.createElement('button');
   buttonClear.innerText = 'Clear all completed';
-  buttonClear.classList.add('pad10_5', 'clearAll');
+  buttonClear.classList.add('pad10_5', 'clearAll', 'w100');
   clearComplete.setAttribute('id', 'buttonClear');
   clearComplete.classList.add('clearAll');
   clearComplete.appendChild(buttonClear);
