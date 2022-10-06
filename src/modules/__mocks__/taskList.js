@@ -18,17 +18,15 @@ export class TaskList {
   }
 
   updateTask = (arr, index, value) => {
-    arr[index-1].description = value;
-    return arr[index-1].description;
+    arr[index - 1].description = value;
+    return arr[index - 1].description;
   }
 
   updateStatus = (arr, index, status) => {
     if (status) {
-      arr[index - 1].completed = true;  
+      arr[index - 1].completed = true;
     }
     else arr[index - 1].completed = false;
-
     return arr[index - 1].completed;
   }
-
 }

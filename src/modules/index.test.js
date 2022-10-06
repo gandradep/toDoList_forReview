@@ -7,16 +7,15 @@ describe('add/remove test', () => {
   const mylist = new TaskList();
   const testObj = [
     {
-      'description': 'work',
-      'completed': false,
-      'index': 1
+      description: 'work',
+      completed: false,
+      index: 1,
     },
     {
-      'description': 'study',
-      'completed': false,
-      'index': 2
-    }
-
+      description: 'study',
+      completed: false,
+      index: 2,
+    },
   ];
   test('testing', () => {
     expect(mylist.addTask('work', false, 1)).toBe('work');
@@ -37,5 +36,4 @@ describe('add/remove test', () => {
   test('test clear completed', () => {
     expect(clearComplete(testObj)).toBe(1);
   });
-
 });
