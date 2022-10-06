@@ -10,4 +10,12 @@ export class TaskList {
 
     return this.taskArray[this.taskArray.length-1].description;
   }
+  removeTask = (arr, index) => {
+    arr.splice(index, 1);
+    // localStorage.setItem('Task_list', JSON.stringify(this.taskArray));
+    // element.classList.toggle('dNone');
+    // element.previousSibling.classList.toggle('dNone');
+    // this.displayList();
+    return arr;
+  }
 }
