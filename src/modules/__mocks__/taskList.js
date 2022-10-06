@@ -25,8 +25,9 @@ export class TaskList {
   updateStatus = (arr, index, status) => {
     if (status) {
       arr[index - 1].completed = true;
-    }
-    else arr[index - 1].completed = false;
+    } else {
+      arr[index - 1].completed = false;
+    }    
     return arr[index - 1].completed;
   }
 }
