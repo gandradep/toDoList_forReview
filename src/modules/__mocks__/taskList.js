@@ -16,4 +16,9 @@ export class TaskList {
     arr.splice(index, 1);
     return arr;
   }
+
+  updateTask = (arr, index, value) => {
+    arr[index-1].description = value;
+    return arr[index-1].description;
+  }
 }
