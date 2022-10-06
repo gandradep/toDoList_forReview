@@ -29,10 +29,13 @@ describe('add/remove test', () => {
     expect(mylist.updateTask(testObj, 2, 'exercise')).toBe('exercise');
   });
   test('test completed status', () => {
-    expect(mylist.updateStatus(testObj, 2, true)).toBe(true);
+    document.body.innerHTML = '<input id="box" type="checkbox" checked>';
+    const checkBox = document.getElementById('box');
+    expect(mylist.updateStatus(testObj, 2, checkBox.checked)).toBe(true);
   });
+  /* this test takes the modification of last test */
   test('test clear completed', () => {
     expect(clearComplete(testObj)).toBe(1);
   });
-  
+
 });

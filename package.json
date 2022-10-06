@@ -4,8 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "jest",
-    "watch": "jest --watch",
+    "test": "jest --env=jsdom",
+    "watch": "jest --env=jsdom --watch ",
     "start": "webpack serve --open",
     "build": "webpack"
   },
