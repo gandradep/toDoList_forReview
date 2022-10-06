@@ -1,6 +1,8 @@
 import { TaskList } from './taskList.js';
+import { clearComplete } from './clearComplete.js';
 
 jest.mock('./taskList');
+jest.mock('./clearComplete');
 describe('add/remove test', () => {
   const mylist = new TaskList();
   const testObj = [
@@ -26,4 +28,11 @@ describe('add/remove test', () => {
   test('test update', () => {
     expect(mylist.updateTask(testObj, 2, 'exercise')).toBe('exercise');
   });
+  test('test completed status', () => {
+    expect(mylist.updateStatus(testObj, 2, true)).toBe(true);
+  });
+  test('test clear completed', () => {
+    expect(clearComplete(testObj)).toBe(1);
+  });
+  
 });
